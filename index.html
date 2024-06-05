@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-<div class="container"> 
+    <form action="">
+        <div>
+            <label for="">Entre com sua altura:</label>
+            <input type="text" id="Altura">
+        </div>
+    
     <div>
-        <label for="">Entre com sua altura:</label>
-        <input type="text" id="altura">
+        <label for="">Entre com sua Peso:</label>
+        <input type="text" id="Peso">
+    </div>
+    
+    <div>
+        <input type="button" value="calcular IMC" onclick="calcular()">
+    <div id="IMC">Seu IMC é:</div>
+    <div id="status">Status:</div>
     </div>
 
-<div>
-    <label for="">Entre com sua Peso:</label>
-    <input type="text" id="Peso">
-</div>
-
-<div>
-    <input type="button" value="calcular IMC" onclick="calcular()">
-</div>
-<div id="IMC">Seu IMC é:</div>
-<div id="status">Status:</div>
-</div>
+    </form>
+<div class="container"> 
+    
 </body>
 </html>
